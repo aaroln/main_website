@@ -1,0 +1,138 @@
+/* Applies to Entire Page */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata Black 900', monospace;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Applies to Home Page */
+
+.head {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to top, #090a24, #101352);
+    background-size: auto;
+}
+
+/* Aaro Lahtinen (Top Left) */
+
+.name {
+    font-size: xx-large;
+
+    position: absolute;
+    margin: 2%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.name a {
+    text-decoration: none;
+    display: inline-block;
+    color: #9cc2ff;
+    overflow: hidden;
+    background: linear-gradient(to right, #9cc2ff, #9cc2ff 50%, white 50%);
+
+}
+
+.name a {
+    /* Same as before */
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+
+.name a {
+    /* Same as before */
+    transition: background-position 0.75s ease;
+}
+.name a:hover {
+    background-position: 0 100%;
+}
+
+nav {
+    width: 80%;
+    position: center;
+    margin: 2.5% auto;
+    z-index: 1;
+    align-items: center;
+}
+
+.links {
+    flex: 1;
+    text-align: center;
+}
+
+.links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 3%;
+
+}
+
+.links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links ul li a::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.links ul li a:hover::after {
+    width: 100%;
+}
+
+#navbar {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -50px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    opacity: 70%;
+}
+
+/* Style the navbar links */
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#circle {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    margin: -18px 0 0 -18px;
+    border: 1px solid white;
+    border-radius: 50%;
+    pointer-events: none;
+
+}
+
+
+
+
